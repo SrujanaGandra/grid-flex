@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Login Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        .login-container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .login-form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            transition: all 0.3s ease;
+        }
+        
+        .login-form h2 {
+            margin-bottom: 1.5rem;
+            color: #333;
+            text-align: center;
+        }
+        
+        .form-floating {
+            margin-bottom: 1rem;
+        }
+        
+        .btn-login {
+            background-color: #4a6fdc;
+            border: none;
+            width: 100%;
+            padding: 0.75rem;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        .btn-login:hover {
+            background-color: #3c5bb4;
+        }
+        
+        .form-footer {
+            text-align: center;
+            margin-top: 1.5rem;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        .form-footer a {
+            color: #4a6fdc;
+            text-decoration: none;
+        }
+        
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 576px) {
+            .login-form {
+                padding: 1.5rem;
+                margin: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Task-1</h1>
+    <!-- Main container with 100vh height -->
+    <div class="login-container">
+        <!-- Login form centered with Flexbox -->
+        <div class="login-form">
+            <h2>Welcome Back</h2>
+            <form>
+                <!-- Username input with floating label -->
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="username" placeholder="Username" required>
+                    <label for="username">Username</label>
+                </div>
+                
+                <!-- Password input with floating label -->
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                    <label for="password">Password</label>
+                </div>
+                
+                <!-- Remember me checkbox -->
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="remember-me">
+                    <label class="form-check-label" for="remember-me">
+                        Remember me
+                    </label>
+                </div>
+                
+                <!-- Login button -->
+                <button type="submit" class="btn btn-primary btn-login">Login</button>
+                
+                <!-- Form footer with links -->
+                <div class="form-footer">
+                    <p>Don't have an account? <a href="#">Sign up</a></p>
+                    <a href="#">Forgot password?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Photo Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .gallery-container {
+            padding: 20px;
+        }
+        .gallery-item {
+            margin-bottom: 20px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .gallery-item img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task-2</h1>
+    <div class="container gallery-container">
+        <div class="header">
+            <h1>Responsive Photo Gallery</h1>
+            <p class="text-center">
+                This gallery displays 4 images per row on large screens, 3 on medium screens, and 2 on small screens.
+            </p>
+        </div>
+        
+        <div class="row">
+            <!-- First row of images -->
+            <div class="col-6 col-md-4 col-lg-3 gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrVrEszEyanIdmVIgRce4sN3bq4MohC7mb4w&s" alt="Gallery Image 1">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTriO_NQ39g7py-snQIQxhIfX2kxJpJU__P4A&s" alt="Gallery Image 2">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ31onaamtNm3wp-ROH0jRYSsX8lJDPxqSN9w&s" alt="Gallery Image 3">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6mj3Y83buNiyeZWkd3S-QqzCf0iJNZEtYBw&s" alt="Gallery Image 4">
+            </div>
+            
+            <!-- Second row of images -->
+            <div class="col-6 col-md-4 col-lg-3 gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzSfrX-6OBBRaa1FMiUCH7xzhq70BSv3jHsw&s" alt="Gallery Image 5">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTweJcUWoK7PfHP1_NkNjZlZp78hldlWJJqeA&s" alt="Gallery Image 6">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVZwLZZgb760VHX2eRT2x7MiVyoJ0frkdRwg&s" alt="Gallery Image 7">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB0ZIsQ97Vd6snip6nGl1VOSxsq5Ns5eoQ8Q&s" alt="Gallery Image 8">
+            </div>
+            
+            <!-- Third row of images -->
+            <div class="col-6 col-md-4 col-lg-3 gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStmi4SnShHmjprk3yMUalg8g7TRMhmaz5aGA&s" alt="Gallery Image 9">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnWB_1ibS3mrgt5lBueN1rWcCg5q1RgABmng&s" alt="Gallery Image 10">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIqgtT0Szg9zy6f_Aytgf5HTx25KRlA1AF6A&s" alt="Gallery Image 11">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDH6zrj4NFAnQWcgXhMqfcRBktxf1_vVOKvA&s" alt="Gallery Image 12">
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
